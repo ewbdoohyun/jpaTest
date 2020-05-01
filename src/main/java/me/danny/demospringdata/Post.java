@@ -3,7 +3,9 @@ package me.danny.demospringdata;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.context.annotation.Primary;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,22 +14,26 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@ToString
 @Setter
 @Getter
-@ToString
 public class Post {
 
-    @Id @GeneratedValue
-    private  long id;
+    @Id
+    @GeneratedValue
+    @Column
+    private  Long id;
 
+    @Column
     private String title;
 
     @OneToMany
     private Set<Comment> comments = new HashSet<>();
 
 
-    public void addComment(Comment comment){
-        this.getComments().add(comment);
-//        comment.setPost(this);
-    }
+//    public void addComment(Comment comment){
+//        this.get
+//        this.getComments().add(comment);
+////        comment.setPost(this);
+//    }
 }

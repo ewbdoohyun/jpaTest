@@ -22,6 +22,7 @@ public class JpaRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+//        new Post();
 
 //        TypedQuery<Post> query = entityManager.createQuery("SELECT p from Post as p",Post.class);
 //        List<Post> posts = query.getResultList();
@@ -30,7 +31,7 @@ public class JpaRunner implements ApplicationRunner {
 //        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
 //
 
-        postRepository.
+//        postRepository.
 //        entityManager.persist(account);
     }
     }
