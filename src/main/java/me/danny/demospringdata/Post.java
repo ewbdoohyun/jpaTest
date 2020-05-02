@@ -31,9 +31,4 @@ public class Post {
     private Set<Comment> comments = new HashSet<>();
 
 
-//    public void addComment(Comment comment){
-//        this.get
-//        this.getComments().add(comment);
-////        comment.setPost(this);
-//    }
 }
